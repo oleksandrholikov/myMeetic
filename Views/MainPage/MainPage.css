@@ -1,0 +1,303 @@
+.section{
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    background-color: azure;
+    margin-inline: auto;
+    border-radius: 15px;
+    border: 2px solid rgb(194, 247, 247);
+}
+.section:not(:last-child){
+    margin-bottom: 3px;
+}
+.main-information >div{
+    padding: 10px;
+    background-color: rgb(173, 245, 245);
+    border-radius: 20px;
+}
+.buttons-control{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+button{
+    padding: 5px;
+    background-color: rgb(241, 245, 13);
+    border-radius: 10px;
+}
+button:hover{
+    border: 2px solid rgb(144, 245, 13);
+    transition-duration: 0.2s;
+    box-shadow: 2px 2px 2px 2px rgba(6, 10, 1, 0.281);
+}
+.information-photo{
+    width: 200px;
+    height: 240px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.photo-male{
+    background-image: url('../../img/acta.png');
+}
+.photo-female{
+    background-image: url('../../img/noelle.jpg');
+}            
+.information-hobby{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
+    max-height: 240px;
+    padding: 5px;
+}
+.hobby-list{
+    display: flex;
+    max-width: 380px;
+    flex-wrap: wrap;
+}
+.hobby-item{
+    text-align: center;
+    background-color: rgb(54, 247, 247);
+    border-radius: 10px;
+    padding-inline: 5px;
+    margin-bottom: 5px;
+    
+}
+.hobby-item:not(:last-child){
+    margin-right: 5px;    
+}
+.hobbu--menu-conrtol{
+    width: 100%;
+}
+.hobbu-menu-conrtol{
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.setting-menu{
+    width: 500px;
+    height: 300px;   
+}
+.setting-menu>form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+form>input{
+    border-radius: 5px;
+}
+.setting-menu h3, .setting-menu h4{
+    margin-block: 5px;
+}
+#oldPassword{
+    width: 90%;
+}
+.closs-menu{
+    position: absolute;
+    background-color: red;
+    top:15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0;    
+    font-size: 35px;    
+}
+
+.hidden-menu{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    background-color:rgb(173, 245, 245) ;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+/* -----FILTERS STYLE------- */
+.search-filter{
+   flex-direction: column;    
+}
+.search-filter h2{
+    width: 100%;
+    text-align: center;
+}
+.search-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.search-item{
+    padding: 5px;
+    background-color: rgb(173, 245, 245);
+    border-radius: 5px;
+    height: max-content;
+    border: 1px solid rgb(91, 250, 250);
+    position: relative;
+}
+.search-item legend{
+    margin-bottom: 4px;
+    color: rgb(22, 189, 189);
+    font-weight: bold;
+
+}
+.search-item input{
+    border-radius: 5px;
+}
+.search-gender label{
+    text-align: center;
+    background-color: rgb(54, 247, 247);
+    border-radius: 10px;
+    padding:4px 7px;
+}
+.searchGender:checked + label{
+    border: 1px solid rgb(5, 87, 87);
+    background-color: rgb(13, 153, 153);
+}
+.search-age input{
+    width: 65px;
+}
+
+.tooltip::after{
+    content:"To use multiple values, write them separated by commas without spaces.";
+    position: absolute;
+    width: 230px;
+    top:70%;
+    right: 0;
+    font-size: 15px;
+    background-color: rgba(25, 206, 230, 0.322);
+    border: 1px solid aqua;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 1s;
+    pointer-events: none;
+}
+.tooltip:hover::after{
+    opacity: 1;
+}
+/*--------RESULT-SECTION---------*/
+.search-resalt{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resalt-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+}
+.change-person{
+    width: 33%;
+    height: 415px;
+}
+.change-person:hover{
+    background-color: rgba(90, 187, 187, 0.267);
+    border-radius: 10px;
+}
+.backgroundImage{
+    width: 345px;
+    height: 415px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;        
+    /* opacity: 0.5; */
+}
+#resalt-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.resalt-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    
+}
+.resalt-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: azure;    
+    opacity: 0.5;
+    z-index: -1; 
+}
+.resalt-info-item{
+    color: rgb(47, 12, 245);
+    font-weight: bold;
+}
+.status-in{
+    border: 2px solid green;
+}
+.status-off{
+    border: 2px solid red;
+}
+/*----LIKE MENU------*/
+.likeUser{
+    width: 500px;
+    height: 300px; 
+}
+.like-user-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.likelist-item{
+    text-align: center;
+    background-color: rgb(54, 247, 247);
+    border-radius: 10px;
+    padding-inline: 5px;
+    margin-bottom: 5px;
+}
+/*-------FOOTER----------*/
+.footer-copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}  
+/*------HIDDEN-FUNCTION-STYLE---------*/
+.background-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 221, 178, 0.5);
+    display: none;
+    z-index: 5;
+}
+.display-hidden{
+    display: none;
+}
+.display-action{
+    display: flex;
+}

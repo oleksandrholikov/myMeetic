@@ -1,0 +1,35 @@
+/* header{
+    background-color: azure;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+} */
+ body{
+    background-color: azure;
+    text-align: center;
+ }
+.header-nav{
+    width: 300px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: 2px solid rgb(31, 243, 172);
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-30%,-50%);
+
+}
+.header-nav-list{
+    display: flex;
+    gap:20px;
+    padding-block: 20px;
+    justify-content: center;
+    align-items: center;    
+}
+
